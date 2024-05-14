@@ -1,10 +1,14 @@
 import React from 'react'
 type GreetProps = {
-    name:string
+    name:string,
+    age:number,
+    isLogged:boolean,
 }
 
 export default function Great(props:GreetProps) {
   return (
-    <div>Great Lets go into TypeScript with {props.name}</div>
+    <>
+    {props.isLogged ? <div>Great Lets go into TypeScript with {props.name} i`M {props.age} YEARS old</div> :"Please, Enter correct password again"}
+    </>
   )
 }
