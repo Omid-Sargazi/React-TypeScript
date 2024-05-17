@@ -46,11 +46,38 @@
 import "./App.css"
 import React from 'react'
 import Greating from './components/Greating'
+import Individual from "./components/individual"
+import IndividualList from "./components/individualList"
 
 export default function App() {
+
+  const personName = {
+    firstName: 'John',
+    lastName: 'Doe',
+  }
+  const listIndividual= [ 
+    {
+      firstName: 'Saeed',
+      lastName: 'Sargazi',
+    },
+    {
+      firstName: 'Saleh',
+      lastName: 'Sargazi',
+    },
+    {
+      firstName: 'Vahid',
+      lastName: 'Sargazi',
+    },
+    {
+      firstName: 'Samyar',
+      lastName: 'Sargazi',
+    },
+  ]
   return (
     <div className="App">
-      <Greating name="Omid" messages={20}/>
+      <Greating name="Omid" messages={20} isLogged={false}/>
+      <Individual name={personName}/>
+      <IndividualList names={listIndividual}/>
     </div>
   )
 }
