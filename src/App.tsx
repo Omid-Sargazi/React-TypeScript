@@ -52,6 +52,7 @@ import StatusAdvanced from "./components/Status"
 import Heading from "./components/Heading"
 import Oscar from "./components/Oscar"
 import Great from './components/Great';
+import Button from "./components/Button"
 
 export default function App() {
 
@@ -88,6 +89,7 @@ export default function App() {
         <Heading>Oscar goes to Leonardo Dicaprio...</Heading>
       </Oscar>
       <Great name="omid"  isLogged={true}/>
+      <Button handleClick={(event,id)=> {console.log("Clicked", event,id)}}/>
     </div>
   )
 }
