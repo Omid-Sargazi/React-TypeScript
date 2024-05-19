@@ -54,6 +54,8 @@ import Oscar from "./components/Oscar"
 import Great from './components/Great';
 import Button from "./components/Button"
 import Input from "./components/Input"
+import Container from "./components/Container"
+
 
 export default function App() {
 
@@ -92,6 +94,7 @@ export default function App() {
       <Great name="omid"  isLogged={true}/>
       <Button handleClick={(event,id)=> {console.log("Clicked", event,id)}}/>
       <Input value={""} handleChange={(event)=>{console.log("changed....",event.target.value)}}/>
+      <Container styles={{background:"green", padding:"1rem", margin:"auto", border:"1px solid white", width:"30rem"}} />
     </div>
   )
 }
