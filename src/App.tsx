@@ -53,6 +53,7 @@ import Heading from "./components/Heading"
 import Oscar from "./components/Oscar"
 import Great from './components/Great';
 import Button from "./components/Button"
+import Input from "./components/Input"
 
 export default function App() {
 
@@ -90,6 +91,7 @@ export default function App() {
       </Oscar>
       <Great name="omid"  isLogged={true}/>
       <Button handleClick={(event,id)=> {console.log("Clicked", event,id)}}/>
+      <Input value={""} handleChange={(event)=>{console.log("changed....",event.target.value)}}/>
     </div>
   )
 }
