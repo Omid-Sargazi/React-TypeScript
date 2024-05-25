@@ -62,6 +62,8 @@ import Greet from "./components02/Greet";
 import Person from "./components02/Person";
 import PersonList from "./components02/PersonList";
 import Status from "./components02/Status";
+import Heading from "./components02/Heading";
+import Oscar from "./components02/Oscar";
 
 
 export default function App() {
@@ -108,6 +110,10 @@ export default function App() {
       <Person personName={personName} />
       <PersonList list={listIndividual}/>
       <Status status={"error"}/>
+      <Heading>Place Holder Text</Heading>
+      <Oscar >
+        <Heading>Oscar goes to Omid</Heading>
+      </Oscar>
     </div>
   )
 }
