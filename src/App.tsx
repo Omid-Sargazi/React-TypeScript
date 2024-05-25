@@ -60,6 +60,7 @@ import React from 'react'
 /////////////////////////////////
 import Greet from "./components02/Greet";
 import Person from "./components02/Person";
+import PersonList from "./components02/PersonList";
 
 
 export default function App() {
@@ -104,6 +105,7 @@ export default function App() {
       <User/> */}
       <Greet name="omid" lang="java" loggedin={true}/>
       <Person personName={personName} />
+      <PersonList list={listIndividual}/>
     </div>
   )
 }
