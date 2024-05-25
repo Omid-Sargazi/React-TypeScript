@@ -61,6 +61,7 @@ import React from 'react'
 import Greet from "./components02/Greet";
 import Person from "./components02/Person";
 import PersonList from "./components02/PersonList";
+import Status from "./components02/Status";
 
 
 export default function App() {
@@ -106,6 +107,7 @@ export default function App() {
       <Greet name="omid" lang="java" loggedin={true}/>
       <Person personName={personName} />
       <PersonList list={listIndividual}/>
+      <Status status={"error"}/>
     </div>
   )
 }
