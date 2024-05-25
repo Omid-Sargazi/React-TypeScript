@@ -45,16 +45,20 @@
 
 import "./App.css"
 import React from 'react'
-import Greating from './components/Greating'
-import Individual from "./components/individual"
-import IndividualList from "./components/individualList"
-import StatusAdvanced from "./components/Status"
-import Heading from "./components/Heading"
-import Oscar from "./components/Oscar"
-import Great from './components/Great';
-import Button from "./components/Button"
-import Input from "./components/Input"
-import Container from "./components/Container"
+// import Greating from './components/Greating'
+// import Individual from "./components/individual"
+// import IndividualList from "./components/individualList"
+// import StatusAdvanced from "./components/Status"
+// import Heading from "./components/Heading"
+// import Oscar from "./components/Oscar"
+// import Great from './components/Great';
+// import Button from "./components/Button";
+// import Input from "./components/Input";
+// import Container from "./components/Container";
+// import Loggedin from "./components/State/loggedin";
+// import User from "./components/State/User";
+/////////////////////////////////
+import Greet from "./components02/Greet";
 
 
 export default function App() {
@@ -83,7 +87,7 @@ export default function App() {
   ]
   return (
     <div className="App">
-      <Greating name="Omid" messages={20} isLogged={false}/>
+      {/* <Greating name="Omid" messages={20} isLogged={false}/>
       <Individual name={personName}/>
       <IndividualList names={listIndividual}/>
       <StatusAdvanced status="loading"/>
@@ -95,6 +99,9 @@ export default function App() {
       <Button handleClick={(event,id)=> {console.log("Clicked", event,id)}}/>
       <Input value={""} handleChange={(event)=>{console.log("changed....",event.target.value)}}/>
       <Container styles={{background:"green", padding:"1rem", margin:"auto", border:"1px solid white", width:"30rem"}} />
+      <Loggedin />
+      <User/> */}
+      <Greet name="omid" lang="java" loggedin={true}/>
     </div>
   )
 }
