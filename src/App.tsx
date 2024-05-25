@@ -59,6 +59,7 @@ import React from 'react'
 // import User from "./components/State/User";
 /////////////////////////////////
 import Greet from "./components02/Greet";
+import Person from "./components02/Person";
 
 
 export default function App() {
@@ -102,6 +103,7 @@ export default function App() {
       <Loggedin />
       <User/> */}
       <Greet name="omid" lang="java" loggedin={true}/>
+      <Person personName={personName} />
     </div>
   )
 }
